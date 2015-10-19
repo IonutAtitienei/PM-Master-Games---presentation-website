@@ -173,7 +173,7 @@ aside {
 }
 
 header {
-    position: relative;
+    position: fixed;
     width: 100%;
     min-height: auto;
     text-align: center;
@@ -184,6 +184,20 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    z-index: 1;
+    height: 88%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.content-wrapper{
+    background-color: white;
+    top: 87%;
+    min-height: 12%;
+    position:absolute;
+    z-index: 2;
+    width: 100%;
 }
 
 header .header-content {
